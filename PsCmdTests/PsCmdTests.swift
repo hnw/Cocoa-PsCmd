@@ -22,15 +22,11 @@ class PsCmdTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let cmd = PsCmd(["ps", "aux"])
+        cmd.exec()
+        print("cout=\(cmd.cout)")
+        print("cerr=\(cmd.cerr)")
+        print("retval=\(cmd.retval)")
+        XCTAssert(true)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

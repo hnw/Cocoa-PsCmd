@@ -10,6 +10,16 @@
 		FE16CF941D2C1C9100FCC41B /* PsCmd.h in Headers */ = {isa = PBXBuildFile; fileRef = FE16CF931D2C1C9100FCC41B /* PsCmd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE16CF9B1D2C1C9100FCC41B /* PsCmd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE16CF901D2C1C9100FCC41B /* PsCmd.framework */; };
 		FE16CFA01D2C1C9100FCC41B /* PsCmdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16CF9F1D2C1C9100FCC41B /* PsCmdTests.swift */; };
+		FE16CFB21D2C1DEB00FCC41B /* keyword.c in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFAA1D2C1DEA00FCC41B /* keyword.c */; };
+		FE16CFB31D2C1DEB00FCC41B /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFAB1D2C1DEA00FCC41B /* print.c */; };
+		FE16CFB41D2C1DEB00FCC41B /* tasks.c in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFAC1D2C1DEB00FCC41B /* tasks.c */; };
+		FE16CFB51D2C1DEB00FCC41B /* ps.c in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFAD1D2C1DEB00FCC41B /* ps.c */; };
+		FE16CFB61D2C1DEB00FCC41B /* extern.h in Headers */ = {isa = PBXBuildFile; fileRef = FE16CFAE1D2C1DEB00FCC41B /* extern.h */; };
+		FE16CFB71D2C1DEB00FCC41B /* ps.h in Headers */ = {isa = PBXBuildFile; fileRef = FE16CFAF1D2C1DEB00FCC41B /* ps.h */; };
+		FE16CFB81D2C1DEB00FCC41B /* nlist.c in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFB01D2C1DEB00FCC41B /* nlist.c */; };
+		FE16CFB91D2C1DEB00FCC41B /* fmt.c in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFB11D2C1DEB00FCC41B /* fmt.c */; };
+		FE16CFBB1D2C1ED600FCC41B /* PsCmd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFBA1D2C1ED600FCC41B /* PsCmd.swift */; };
+		FE16CFBE1D2C200000FCC41B /* CStringArray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE16CFBD1D2C200000FCC41B /* CStringArray.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,16 @@
 		FE16CF9A1D2C1C9100FCC41B /* PsCmdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PsCmdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE16CF9F1D2C1C9100FCC41B /* PsCmdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsCmdTests.swift; sourceTree = "<group>"; };
 		FE16CFA11D2C1C9100FCC41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE16CFAA1D2C1DEA00FCC41B /* keyword.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keyword.c; sourceTree = "<group>"; };
+		FE16CFAB1D2C1DEA00FCC41B /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
+		FE16CFAC1D2C1DEB00FCC41B /* tasks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tasks.c; sourceTree = "<group>"; };
+		FE16CFAD1D2C1DEB00FCC41B /* ps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ps.c; sourceTree = "<group>"; };
+		FE16CFAE1D2C1DEB00FCC41B /* extern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extern.h; sourceTree = "<group>"; };
+		FE16CFAF1D2C1DEB00FCC41B /* ps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ps.h; sourceTree = "<group>"; };
+		FE16CFB01D2C1DEB00FCC41B /* nlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nlist.c; sourceTree = "<group>"; };
+		FE16CFB11D2C1DEB00FCC41B /* fmt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fmt.c; sourceTree = "<group>"; };
+		FE16CFBA1D2C1ED600FCC41B /* PsCmd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsCmd.swift; sourceTree = "<group>"; };
+		FE16CFBD1D2C200000FCC41B /* CStringArray.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CStringArray.framework; path = Carthage/Build/iOS/CStringArray.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE16CFBE1D2C200000FCC41B /* CStringArray.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +74,7 @@
 		FE16CF861D2C1C9100FCC41B = {
 			isa = PBXGroup;
 			children = (
+				FE16CFBD1D2C200000FCC41B /* CStringArray.framework */,
 				FE16CF921D2C1C9100FCC41B /* PsCmd */,
 				FE16CF9E1D2C1C9100FCC41B /* PsCmdTests */,
 				FE16CF911D2C1C9100FCC41B /* Products */,
@@ -71,8 +93,17 @@
 		FE16CF921D2C1C9100FCC41B /* PsCmd */ = {
 			isa = PBXGroup;
 			children = (
+				FE16CFAA1D2C1DEA00FCC41B /* keyword.c */,
+				FE16CFAB1D2C1DEA00FCC41B /* print.c */,
+				FE16CFAC1D2C1DEB00FCC41B /* tasks.c */,
+				FE16CFAD1D2C1DEB00FCC41B /* ps.c */,
+				FE16CFAE1D2C1DEB00FCC41B /* extern.h */,
+				FE16CFAF1D2C1DEB00FCC41B /* ps.h */,
+				FE16CFB01D2C1DEB00FCC41B /* nlist.c */,
+				FE16CFB11D2C1DEB00FCC41B /* fmt.c */,
 				FE16CF931D2C1C9100FCC41B /* PsCmd.h */,
 				FE16CF951D2C1C9100FCC41B /* Info.plist */,
+				FE16CFBA1D2C1ED600FCC41B /* PsCmd.swift */,
 			);
 			path = PsCmd;
 			sourceTree = "<group>";
@@ -93,7 +124,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE16CFB61D2C1DEB00FCC41B /* extern.h in Headers */,
 				FE16CF941D2C1C9100FCC41B /* PsCmd.h in Headers */,
+				FE16CFB71D2C1DEB00FCC41B /* ps.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +141,7 @@
 				FE16CF8C1D2C1C9100FCC41B /* Frameworks */,
 				FE16CF8D1D2C1C9100FCC41B /* Headers */,
 				FE16CF8E1D2C1C9100FCC41B /* Resources */,
+				FE16CFBC1D2C1FE300FCC41B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -189,11 +223,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FE16CFBC1D2C1FE300FCC41B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CStringArray.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE16CF8B1D2C1C9100FCC41B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE16CFB51D2C1DEB00FCC41B /* ps.c in Sources */,
+				FE16CFBB1D2C1ED600FCC41B /* PsCmd.swift in Sources */,
+				FE16CFB41D2C1DEB00FCC41B /* tasks.c in Sources */,
+				FE16CFB21D2C1DEB00FCC41B /* keyword.c in Sources */,
+				FE16CFB91D2C1DEB00FCC41B /* fmt.c in Sources */,
+				FE16CFB31D2C1DEB00FCC41B /* print.c in Sources */,
+				FE16CFB81D2C1DEB00FCC41B /* nlist.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,26 +368,37 @@
 		FE16CFA51D2C1C9100FCC41B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PsCmd/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.hnw.PsCmd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FE16CFA61D2C1C9100FCC41B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PsCmd/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

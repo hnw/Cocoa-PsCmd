@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char PsCmdVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PsCmd/PublicHeader.h>
 
-
+extern void *ps_main_routine(void *_arg);
