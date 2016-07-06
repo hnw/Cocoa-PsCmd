@@ -47,7 +47,7 @@ static const char rcsid[] =
 #include <sys/stat.h>
 
 #include <sys/ucred.h>
-#include <sys/user.h>
+//#include <sys/user.h>
 #include <sys/sysctl.h>
 #include <sys/cdefs.h>
 
@@ -56,9 +56,9 @@ static const char rcsid[] =
 #endif /* FIXME */
 #include <err.h>
 #include <langinfo.h>
-#include <libproc.h>
+#include "libproc.h"
 #include <math.h>
-#include <nlist.h>
+//#include <nlist.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -1183,7 +1183,7 @@ void
 wq(KINFO *k, VARENT *ve)
 {
 	VAR *v;
-	struct proc_workqueueinfo wqinfo;
+	struct _proc_workqueueinfo wqinfo;
 	int len;
 	int ret;
 	uint32_t nthreads;

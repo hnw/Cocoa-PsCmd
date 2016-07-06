@@ -1,5 +1,5 @@
 #include <sys/param.h>
-#include <sys/user.h>
+//#include <sys/user.h>
 #include <sys/time.h>
 #include <sys/resource.h>
 #include <sys/stat.h>
@@ -11,7 +11,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <limits.h>
-#include <nlist.h>
+//#include <nlist.h>
 #include <paths.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,7 +21,7 @@
 #include <pwd.h>
 
 #include "ps.h"
-#include <mach/shared_memory_server.h>
+#include "mach/shared_memory_server.h"
 
 extern kern_return_t task_for_pid(task_port_t task, pid_t pid, task_port_t *target);
 

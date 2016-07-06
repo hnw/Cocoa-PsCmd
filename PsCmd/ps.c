@@ -54,12 +54,12 @@ __FBSDID("$FreeBSD: src/bin/ps/ps.c,v 1.110 2005/02/09 17:37:38 ru Exp $");
 #include <sys/time.h>
 #endif /* __APPLE__ */
 #include <sys/proc.h>
-#include <sys/user.h>
+//#include <sys/user.h>
 #include <sys/stat.h>
 #include <sys/ioctl.h>
 #include <sys/sysctl.h>
 #include <sys/mount.h>
-#include <sys/resourcevar.h>
+//#include <sys/resourcevar.h>
 
 #include <ctype.h>
 #include <err.h>
@@ -81,7 +81,8 @@ __FBSDID("$FreeBSD: src/bin/ps/ps.c,v 1.110 2005/02/09 17:37:38 ru Exp $");
 #include "ps.h"
 
 #ifdef __APPLE__
-#include <get_compat.h>
+//#include <get_compat.h>
+#define COMPAT_MODE(func, mode) (1)
 #else /* !__APPLE__ */
 #define COMPAT_MODE(func, mode) (1)
 #endif /* __APPLE__ */

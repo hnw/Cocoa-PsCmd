@@ -20,6 +20,9 @@
 		FE16CFB91D2C1DEB00FCC41B /* fmt.c in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFB11D2C1DEB00FCC41B /* fmt.c */; };
 		FE16CFBB1D2C1ED600FCC41B /* PsCmd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16CFBA1D2C1ED600FCC41B /* PsCmd.swift */; };
 		FE16CFBE1D2C200000FCC41B /* CStringArray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE16CFBD1D2C200000FCC41B /* CStringArray.framework */; };
+		FE16CFC01D2D49B600FCC41B /* libproc.h in Headers */ = {isa = PBXBuildFile; fileRef = FE16CFBF1D2D49B600FCC41B /* libproc.h */; };
+		FE16CFC21D2D49CB00FCC41B /* mach in Resources */ = {isa = PBXBuildFile; fileRef = FE16CFC11D2D49CB00FCC41B /* mach */; };
+		FE16CFC41D2D49D400FCC41B /* sys in Resources */ = {isa = PBXBuildFile; fileRef = FE16CFC31D2D49D400FCC41B /* sys */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		FE16CFB11D2C1DEB00FCC41B /* fmt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fmt.c; sourceTree = "<group>"; };
 		FE16CFBA1D2C1ED600FCC41B /* PsCmd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsCmd.swift; sourceTree = "<group>"; };
 		FE16CFBD1D2C200000FCC41B /* CStringArray.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CStringArray.framework; path = Carthage/Build/iOS/CStringArray.framework; sourceTree = "<group>"; };
+		FE16CFBF1D2D49B600FCC41B /* libproc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libproc.h; sourceTree = "<group>"; };
+		FE16CFC11D2D49CB00FCC41B /* mach */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mach; sourceTree = "<group>"; };
+		FE16CFC31D2D49D400FCC41B /* sys */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sys; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,9 @@
 		FE16CF921D2C1C9100FCC41B /* PsCmd */ = {
 			isa = PBXGroup;
 			children = (
+				FE16CFC31D2D49D400FCC41B /* sys */,
+				FE16CFC11D2D49CB00FCC41B /* mach */,
+				FE16CFBF1D2D49B600FCC41B /* libproc.h */,
 				FE16CFAA1D2C1DEA00FCC41B /* keyword.c */,
 				FE16CFAB1D2C1DEA00FCC41B /* print.c */,
 				FE16CFAC1D2C1DEB00FCC41B /* tasks.c */,
@@ -126,6 +135,7 @@
 			files = (
 				FE16CFB61D2C1DEB00FCC41B /* extern.h in Headers */,
 				FE16CF941D2C1C9100FCC41B /* PsCmd.h in Headers */,
+				FE16CFC01D2D49B600FCC41B /* libproc.h in Headers */,
 				FE16CFB71D2C1DEB00FCC41B /* ps.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE16CFC41D2D49D400FCC41B /* sys in Resources */,
+				FE16CFC21D2D49CB00FCC41B /* mach in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +459,7 @@
 				FE16CFA61D2C1C9100FCC41B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE16CFA71D2C1C9100FCC41B /* Build configuration list for PBXNativeTarget "PsCmdTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +468,7 @@
 				FE16CFA91D2C1C9100FCC41B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
